@@ -1,0 +1,72 @@
+# Переименуйте этот файл в .gitignore после раскатки шаблона в проект —
+# или запустите /setup-project, команда сделает это сама.
+# В шаблоне он лежит с суффиксом .example, чтобы не действовать
+# на репозиторий, в котором сам шаблон разрабатывается.
+
+# 1C:Enterprise — бинарные файлы конфигурации и баз данных
+*.cf
+*.cfe
+*.cfu
+*.dt
+*.1cd
+*.1cl
+*.1cv8
+*.pfl
+
+# 1C:Enterprise — логи и временные файлы
+*.log
+*.lgf
+*.lgp
+*.lgd
+*.tmp
+*.bak
+*.old
+
+# 1C:Enterprise — служебные файлы выгрузки (GitConverter/GitSync, инкрементальная выгрузка)
+*ConfigDumpInfo.xml
+*DumpInfo.xml
+
+# Архивы вне выгрузки
+*.rar
+*.7z
+
+# OS — системные файлы
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# IDE и редакторы
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.cursor/
+.codex/
+
+# Каталог шаблона Claude Code. Правила, скиллы и агенты версионируются вместе с проектом —
+# это ваша настройка под свою базу, её стоит хранить в истории. Закрыты только личные
+# настройки конкретной машины. Если каталог не должен попадать в git — добавьте строку .claude/
+.claude/settings.local.json
+
+# Артефакты сборки (сюда пишет 1c-batch) и среды выполнения
+/build/
+dist/
+target/
+node_modules/
+.venv/
+venv/
+
+# Приватные настройки
+CLAUDE.local.md
+.env
+/.1c-devbase.ps1
+/.1c-devbase.bat
+/tools/.1c-devbase.ps1
+/tools/.1c-devbase.bat
+
+# Memory Bank (личный контекст)
+**/.mem/
+
+# Рабочие артефакты скиллов (планы, фазы)
+.tasks/

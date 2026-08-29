@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "<ИМЯ_СЕРВЕРА_БАЗЫ>": {
+      "type": "http",
+      "url": "http://<АДРЕС_СЕРВЕРА>/<ИМЯ_ПУБЛИКАЦИИ_БАЗЫ>/hs/mcp/"
+    },
+    "v8std": {
+      "type": "http",
+      "url": "https://ai.v8std.ru/mcp"
+    }
+  }
+}
