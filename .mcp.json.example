@@ -7,6 +7,11 @@
     "v8std": {
       "type": "http",
       "url": "https://ai.v8std.ru/mcp"
+    },
+    "code-index": {
+      "type": "http",
+      "url": "http://127.0.0.1:8011/mcp",
+      "alwaysLoad": true
     }
   }
 }
